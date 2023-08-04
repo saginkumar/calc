@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" disabled>
+        <input type="text" id="display" disabled placeholder="LOVE CODING">
         <button class="operator" onclick="appendToDisplay('/')">/</button>
         <button class="operator" onclick="appendToDisplay('*')">*</button>
         <button class="operator" onclick="appendToDisplay('-')">-</button>
@@ -14,7 +14,7 @@
         <button class="number" onclick="appendToDisplay('7')">7</button>
         <button class="number" onclick="appendToDisplay('8')">8</button>
         <button class="number" onclick="appendToDisplay('9')">9</button>
-        <button class="clear" onclick="clearDisplay()">C</button>
+        <button class="operator" onclick="math_sqrt('√')">√</button>
         <button class="number" onclick="appendToDisplay('4')">4</button>
         <button class="number" onclick="appendToDisplay('5')">5</button>
         <button class="number" onclick="appendToDisplay('6')">6</button>
@@ -22,8 +22,14 @@
         <button class="number" onclick="appendToDisplay('1')">1</button>
         <button class="number" onclick="appendToDisplay('2')">2</button>
         <button class="number" onclick="appendToDisplay('3')">3</button>
+        <button class="clear" onclick="clearDisplay()">C</button>           
         <button class="number" onclick="appendToDisplay('0')">0</button>
         <button class="number" onclick="appendToDisplay('.')">.</button>
+        <button class="thumb">👍</button>
+        <button class="song" onclick="playAudio()">Play</button>
+        <audio id="audioPlayer" controls style="display:none;">
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
     </div>
 
     <script src="script.js"></script>
